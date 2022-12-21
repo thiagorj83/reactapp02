@@ -17,7 +17,7 @@ O palíndromo mais antigo do mundo é a frase em latim “Sator arepo tenet oper
 
 ## Instalação
 
-  Para este projeto, desenvolvido no Windows 11, foi necessário visitar a página **https://reactnavigation.org/docs/getting-started/** onde há a descrição de como instalar e utilizar a biblioteca react-navigation, necessária para criar o menu de navegação do aplicativo.
+  Para este projeto, desenvolvido no Windows 11, foi necessário visitar a página **https://reactnavigation.org/docs/getting-started/** onde há a descrição de como instalar e utilizar a biblioteca **react-navigation**, necessária para criar o menu de navegação do aplicativo.
   
   Para exemplificar a criação da pasta de projeto, utilizarei o nome **“app-react-native”**.
 No prompt de comando ou no **Windows powershell**, digite:
