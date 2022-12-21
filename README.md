@@ -37,6 +37,68 @@ Para finalizar, adicione o seguinte ***import*** no topo dos imports, como o **p
 
 * import 'react-native-gesture-handler';     
 
-          
+## Classe **PalindromeChecker**
+
+A classe **PalindromeChecker** possui uma única função chamada **"isPalindrome** que recebe uma string e analise se há ou não a ocorrência de palíndromo.
+
+    class PalindromeChecker {
+        isPalindrome(text) {
+
+            let original_text_strings = text.normalize('NFD').replace(/[\u0300-\u036f]/g, "").match(/[a-zA-Z]+/g).join('').toLowerCase()
+            let reversed_text_strings = original_text_strings.split('').reverse().join('')
+            if (original_text_strings === reversed_text_strings) {
+                alert('\"' + `${text}` + '\"' + ' é um palíndromo!')
+            } else {
+                alert('\"' + `${text}` + '\"' + ' não é um palíndromo!')
+            }
+
+        }
+
+    }
+    
+Na construção da função **isPalindrome** utilizei quatro funções pré-definidas do javascript:
+* normalize()
+* replace()
+* match()
+* join()
+* toLowerCase()
+
+A variável ***"text"*** contém o texto inserido pelo usuário. Ele pode ser uma palavra ou uma frase, contendo ou não sinais gráficos como traços, vírgulos, ou ponto final., entre outros.
+
+Para explicar a utilidade de cada função pré-definida, a frase **Aí, Lima falou: “Olá, família!”** será utilizada.
+
+text='Aí, Lima falou: “Olá, família!”'
+
+
+
+A função pré-definida **normalize('NFD')** transforma os caracteres para o formato padrão UNICODE, o que torna possível remover os acentos que forem encontrados através da função **replace(/[\u0300-\u036f]/g, "")**, como acento agudo, circunflexo, crase ou til, entre outros,inclusive a cedilha('ç').
+
+Neste caso, console.log(texto.normalize('NFD').replace(/[\u0300-\u036f]/g, "")) exibiria a seguinte transformação na string original:
+* Ai, Lima falou: “Ola, familia!”
+
+A função pré-definida **match(/[a-zA-Z]+/g)** extrai, através de uma expressão regular, apenas as letras da string.
+Juntando a função **match** com as duas anteriores, temos:
+
+* ['Ai', 'Lima', 'falou', 'Ola', 'familia']
+
+Por fim, as funções **join('')** e toLowerCase() efetuam,respectivamente, a junção de todas as strings presentes na array criada e as convertem para caracteres 
+minúsculos, se for o caso. Esse resultado é salvo na variável **original_text_strings**:
+* original_text_strings = ailimafalouolafamilia
+
+O algoritmos efetua a inversão da string obtida e a salva na variável **reversed_text_strings** .
+A função pré-definida split('') efetua a separação da string em caracteres.
+Já a reverse(), inverte o array de caracteres.
+Por fim, a função join('') efetua a junção dos caracteres em uma única string.
+
+* reversed_text_strings = original_text_strings.split('').reverse().join('')
+* reversed_text_strings = ailimafalouolafamilia
+
+O algoritmo define que há um palíndromo quando **original_text_strings** é igual a **reversed_text_strings**.
+Neste caso, ailimafalouolafamilia é igual ailimafalouolafamilia.
+Neste caso, a frase **Aí, Lima falou: “Olá, família!”** é um palíndromo!
+
+
+
+
 
  
