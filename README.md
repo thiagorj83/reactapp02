@@ -4,6 +4,9 @@ Este é um aplicativo simples criado em React Native que visa demonstrar o que �
 praticar a criação de telas utilizando as bibliotecas
 ***React Navigation*** e ***React Native Gesture Handler*** que criam menus laterais e permitem a interação do usuário via movimento de arrastar a tela.
 
+#### Pré-requisitos
+•	react-native >= 0.63.0.
+
 ## Introdução
 
   Um palíndromo é uma palavra ou frase que tem a mesma sequência de letras em qualquer ordem de leitura, seja da esquerda para a direita, seja da direita para a esquerda. Como as palavras “ovo” e “sopapos”, por exemplo. Acentos, cedilhas e pontuações não são considerados para a inversão da leitura.Também há palíndromos numéricos – qualquer sequência lida igual nos dois sentidos. O dia 20/02/2002 foi uma data palíndromo que só acontece a cada mil anos. 
@@ -11,8 +14,6 @@ O palíndromo mais antigo do mundo é a frase em latim “Sator arepo tenet oper
 
 * Fonte: **https://super.abril.com.br/mundo-estranho/o-que-e-um-palindromo/**
   
-#### Pré-requisitos
-•	react-native >= 0.63.0.
 
 ## Instalação
 
