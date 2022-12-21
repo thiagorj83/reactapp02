@@ -2,7 +2,6 @@
 
 export class PalindromeChecker {
     isPalindrome(text) {
-        console.log(text)
 
         // console.log(text.match(/[a-zA-Z]+/g))
         let original_text_strings = text.normalize('NFD').replace(/[\u0300-\u036f]/g, "").match(/[a-zA-Z]+/g).join('').toLowerCase()
