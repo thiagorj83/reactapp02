@@ -47,7 +47,10 @@ const styles = StyleSheet.create({
             {`anilina, esse, racificar, socos, sopapos,'Luz azul', `}
         </Text>
         <Text style={{ color:'black',marginLeft: 5}}>
-            {`'O mito é ótimo', 'O lobo ama o bolo', 'O lobo ama o bolo'... `}
+            {`'O mito é ótimo', 'O lobo ama o bolo', ... `}
+        </Text>
+        <Text style={{ color:'black',marginLeft: 5}}>
+            {`Luza Rocelina, a namorada do Manuel, leu na moda da romana: "anil é cor azul"... `}
         </Text>
       </View>
     );
